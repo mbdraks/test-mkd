@@ -1,0 +1,26 @@
+site_name: CSE Docs
+
+theme:
+  name: material
+
+# nav:
+#     - Home: index.md
+#     - SD-WAN: sdwan.md
+#     - About: about.md
+
+nav:
+  - Home: index.md
+  - Secure SD-WAN:
+      - Single Hub: sdwan_single_hub.md
+      - Styling your docs: styling-your-docs.md
+  - About:
+      - License: license.md
+      - Release Notes: release-notes.md
+
+markdown_extensions:
+  - admonition
+  # Content Tabs
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  # collapsible Admonitions
+  - pymdownx.details
