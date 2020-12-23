@@ -13,15 +13,17 @@ nav:
   - Secure SD-WAN:
       - Single Hub: sdwan_single_hub.md
       - Styling your docs: styling-your-docs.md
+  - Snippet: snippet_test.md
   - About:
       - License: license.md
       - Release Notes: release-notes.md
 
 markdown_extensions:
   - admonition
+  - pymdownx.snippets
   # Content Tabs
   - pymdownx.tabbed
   - pymdownx.superfences
   # collapsible Admonitions
   - pymdownx.details
-  - pymdownx.snippets
+  

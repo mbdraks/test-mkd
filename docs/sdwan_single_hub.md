@@ -5,7 +5,13 @@ a Single Hub SD-WAN configuration.
 
 ## Network Diagram
 
-![Network Diagram](img/sdwan_single_hub_network_diagram.png)
+--8<--
+filename.md
+filename.log
+--8<--
+
+
+<!-- ![Network Diagram](img/sdwan_single_hub_network_diagram.png) -->
 
 
 ## Requirements and Assumptions
