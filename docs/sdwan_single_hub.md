@@ -60,12 +60,10 @@ for all branches.
 
 === "FortiOS CLI"
 
+    ```python
+    --8<-- "sample.py"
     ```
-    config system central-management
-        set type fortimanager
-        set fmg "10.100.55.12"
-    end
-    ```
+
 
 === "FortiManager API"
  
