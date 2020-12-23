@@ -7,3 +7,5 @@ filename.log
 
 
 --8<-- "filename.md"
+
+--8<-- "docs/filename.md"
