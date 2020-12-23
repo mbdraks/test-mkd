@@ -1,0 +1,750 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+    
+    
+      
+        <title>Single Hub - CSE Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sd-wan-single-hub" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="CSE Docs" class="md-header-nav__button md-logo" aria-label="CSE Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            CSE Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Single Hub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CSE Docs" class="md-nav__button md-logo" aria-label="CSE Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    CSE Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Secure SD-WAN
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Secure SD-WAN" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Secure SD-WAN
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Single Hub
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Single Hub
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-diagram" class="md-nav__link">
+    Network Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-assumptions" class="md-nav__link">
+    Requirements and Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-and-components" class="md-nav__link">
+    Architecture and Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-and-capabilities" class="md-nav__link">
+    Features and Capabilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-overview" class="md-nav__link">
+    Configuration Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-guide" class="md-nav__link">
+    Configuration Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-management" class="md-nav__link">
+    Basic Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-add-devices-to-fortimanager" class="md-nav__link">
+    1. Add devices to FortiManager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-devices-to-group" class="md-nav__link">
+    2. Add devices to group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../styling-your-docs.md" class="md-nav__link">
+      Styling your docs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../snippet_test/" class="md-nav__link">
+      Snippet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      About
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../license.md" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes.md" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network-diagram" class="md-nav__link">
+    Network Diagram
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-and-assumptions" class="md-nav__link">
+    Requirements and Assumptions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-and-components" class="md-nav__link">
+    Architecture and Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-and-capabilities" class="md-nav__link">
+    Features and Capabilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-overview" class="md-nav__link">
+    Configuration Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-guide" class="md-nav__link">
+    Configuration Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-management" class="md-nav__link">
+    Basic Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-add-devices-to-fortimanager" class="md-nav__link">
+    1. Add devices to FortiManager
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-add-devices-to-group" class="md-nav__link">
+    2. Add devices to group
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sd-wan-single-hub">SD-WAN: Single Hub</h1>
+<p>This deployment reference will provide you all steps required to implement
+a Single Hub SD-WAN configuration.</p>
+<h2 id="network-diagram">Network Diagram</h2>
+<!-- ![Network Diagram](img/sdwan_single_hub_network_diagram.png) -->
+
+<h2 id="requirements-and-assumptions">Requirements and Assumptions</h2>
+<ul>
+<li>Lorem Ipsum</li>
+<li>Lorem Ipsum</li>
+</ul>
+<h2 id="architecture-and-components">Architecture and Components</h2>
+<ul>
+<li>FortiManager (Orchestrationd and Management)</li>
+<li>FortiGate (Controller and Data)</li>
+</ul>
+<h2 id="features-and-capabilities">Features and Capabilities</h2>
+<ul>
+<li>Dynamic Routing (BGP)</li>
+<li>Direct Internet Access (DIA)</li>
+<li>ADVPN</li>
+</ul>
+<h2 id="configuration-overview">Configuration Overview</h2>
+<p>These are the main configuration steps required to deploy this architecture.</p>
+<ol>
+<li>VPNs</li>
+<li>Interfaces</li>
+<li>BGP</li>
+<li>Firewall Policies</li>
+</ol>
+<h2 id="configuration-guide">Configuration Guide</h2>
+<h3 id="basic-management">Basic Management</h3>
+<p>We will start our deployment by importing all existing devices on the
+environment to FortiManager, moving those devices to specific device
+groups to improve organization, creating meta fields that will be used
+to differentiate those devices during the deployment of scripts,
+creating dynamic interfaces to allow us to use a single policy package
+for all branches.</p>
+<h4 id="1-add-devices-to-fortimanager">1. Add devices to FortiManager</h4>
+<div class="tabbed-set" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">FortiManager GUI</label><div class="tabbed-content">
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/SFBd8pMhw1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">FortiOS GUI</label><div class="tabbed-content">
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/qmcrbomk4CQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">FortiOS CLI</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">FortiManager API</label><div class="tabbed-content">
+<details class="question" open="open"><summary>REQUEST</summary><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;jsonrpc&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;exec&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;adom&quot;</span><span class="p">:</span> <span class="s2">&quot;DEMO&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;script&quot;</span><span class="p">:</span> <span class="s2">&quot;script-002&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;/dvmdb/adom/DEMO/script/execute&quot;</span>
+    <span class="p">}],</span>
+    <span class="nt">&quot;session&quot;</span><span class="p">:</span> <span class="s2">&quot;tWy6iKRmT+C2obiyVpAz6c0tSel3RnNroUhqIeko0SLQD0lz1dSJ5iB0XbW4DcTb/w/bFkt6XuLLSz5AkyA9UA==&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;verbose&quot;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+<details class="success" open="open"><summary>RESPONSE</summary><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;result&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;task&quot;</span><span class="p">:</span> <span class="mi">452</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;code&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;OK&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;/dvmdb/adom/DEMO/script/execute&quot;</span>
+    <span class="p">}]</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">FortiManager Ansible</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Probe a remote device and retrieve its device information and system status</span>
+  <span class="nt">fortinet.fortimanager.fmgr_dvm_cmd_discover_device</span><span class="p">:</span>
+    <span class="nt">dvm_cmd_discover_device</span><span class="p">:</span>
+      <span class="nt">device</span><span class="p">:</span>
+        <span class="nt">adm_usr</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">adm_usr</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">adm_pass</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">adm_pass</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">ip</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">item.device_ip</span><span class="nv"> </span><span class="s">}}&#39;</span>
+  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">result</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Add a device to the Device Manager database</span>
+  <span class="nt">fortinet.fortimanager.fmgr_dvm_cmd_add_device</span><span class="p">:</span>
+    <span class="nt">bypass_validation</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+    <span class="nt">dvm_cmd_add_device</span><span class="p">:</span>
+      <span class="nt">adom</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">adom</span><span class="nv"> </span><span class="s">}}&#39;</span>
+      <span class="nt">device</span><span class="p">:</span>
+        <span class="nt">adm_usr</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">adm_usr</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">adm_pass</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">adm_pass</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">ip</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">item.device_ip</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">item.device_name</span><span class="nv"> </span><span class="s">}}&#39;</span>
+        <span class="nt">mgmt_mode</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">fmg</span>
+        <span class="nt">sn</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">result.meta.response_data.device.sn</span><span class="nv"> </span><span class="s">}}&#39;</span>
+      <span class="nt">flags</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">create_task</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">nonblocking</span>
+  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">installing_task</span>
+
+<span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">poll the task</span>
+  <span class="nt">fortinet.fortimanager.fmgr_fact</span><span class="p">:</span>
+    <span class="nt">facts</span><span class="p">:</span>
+        <span class="nt">selector</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">task_task</span>
+        <span class="nt">params</span><span class="p">:</span>
+            <span class="nt">task</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">installing_task.meta.response_data.taskid</span><span class="nv"> </span><span class="s">}}&#39;</span>
+  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">taskinfo</span>
+  <span class="nt">until</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">taskinfo.meta.response_data.percent == 100</span>
+  <span class="nt">retries</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+  <span class="nt">delay</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+  <span class="nt">failed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">taskinfo.meta.response_data.state == &#39;error&#39; and &#39;devsnexist&#39; not in taskinfo.meta.response_data.line[0].detail</span>
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If poll task is not used it can lead to this error due to timeout:
+<div class="highlight"><pre><span></span><code>Traceback (most recent call last):
+    File &quot;/root/.ansible/tmp/ansible-local-3828ckgvd40u/ansible-tmp-1597342626.9736748-3875-19826767949616/AnsiballZ_fmgr_dvm_cmd_add_device.py&quot;, line 102, in &lt;module&gt;
+    _ansiballz_main()
+    File &quot;/root/.ansible/tmp/ansible-local-3828ckgvd40u/ansible-tmp-1597342626.9736748-3875-19826767949616/AnsiballZ_fmgr_dvm_cmd_add_device.py&quot;, line 94, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+    File &quot;/root/.ansible/tmp/ansible-local-3828ckgvd40u/ansible-tmp-1597342626.9736748-3875-19826767949616/AnsiballZ_fmgr_dvm_cmd_add_device.py&quot;, line 40, in invoke_module
+    runpy.run_module(mod_name=&#39;ansible_collections.fortinet.fortimanager.plugins.modules.fmgr_dvm_cmd_add_device&#39;, init_globals=None, run_name=&#39;__main__&#39;, alter_sys=True)
+    File &quot;/usr/lib/python3.7/runpy.py&quot;, line 205, in run_module
+    return _run_module_code(code, init_globals, run_name, mod_spec)
+    File &quot;/usr/lib/python3.7/runpy.py&quot;, line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+    File &quot;/usr/lib/python3.7/runpy.py&quot;, line 85, in _run_code
+    exec(code, run_globals)
+    File &quot;/tmp/ansible_fortinet.fortimanager.fmgr_dvm_cmd_add_device_payload_4h897igx/ansible_fortinet.fortimanager.fmgr_dvm_cmd_add_device_payload.zip/ansible_collections/fortinet/fortimanager/plugins/modules/fmgr_dvm_cmd_add_device.py&quot;, line 362, in &lt;module&gt;
+    File &quot;/tmp/ansible_fortinet.fortimanager.fmgr_dvm_cmd_add_device_payload_4h897igx/ansible_fortinet.fortimanager.fmgr_dvm_cmd_add_device_payload.zip/ansible_collections/fortinet/fortimanager/plugins/modules/fmgr_dvm_cmd_add_device.py&quot;, line 356, in main
+ansible_collections.fortinet.fortimanager.plugins.module_utils.common.FMGBaseException: command timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+</code></pre></div></p>
+</div>
+</div>
+</div>
+<h4 id="2-add-devices-to-group">2. Add devices to group</h4>
+<p>stuff stuff stuff</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../snippet_test/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Snippet
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

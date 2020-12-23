@@ -1,0 +1,473 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.2">
+    
+    
+      
+        <title>SD-WAN - CSE Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.73f7c429.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sd-wan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="CSE Docs" class="md-header-nav__button md-logo" aria-label="CSE Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            CSE Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              SD-WAN
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CSE Docs" class="md-nav__button md-logo" aria-label="CSE Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    CSE Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
+    
+    <label class="md-nav__link" for="nav-2">
+      Secure SD-WAN
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Secure SD-WAN" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Secure SD-WAN
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../sdwan_single_hub/" class="md-nav__link">
+      Single Hub
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../styling-your-docs.md" class="md-nav__link">
+      Styling your docs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href="../snippet_test/" class="md-nav__link">
+      Snippet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      About
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="About" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../license.md" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../release-notes.md" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quam-ad-mutando-perstat" class="md-nav__link">
+    Quam ad mutando perstat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#labore-tardius-sed-nunc-summoque-poplite-aderat" class="md-nav__link">
+    Labore tardius sed nunc summoque poplite aderat
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#littera-longis-pars-meliore-et-illi" class="md-nav__link">
+    Littera longis pars meliore et illi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sine-moles" class="md-nav__link">
+    Sine moles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#veneror-domos-quinque-proxima" class="md-nav__link">
+    Veneror domos quinque proxima
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sd-wan">SD-WAN</h1>
+<h2 id="quam-ad-mutando-perstat">Quam ad mutando perstat</h2>
+<p>Lorem markdownum Ulixes iungit falce remisso pro tyranni nomine, est. Posuitque
+nostris dixit, <a href="http://sceptri.org/nati">non quas urgues</a> illi novem bis. Ab et
+illam?</p>
+<h2 id="labore-tardius-sed-nunc-summoque-poplite-aderat">Labore tardius sed nunc summoque poplite aderat</h2>
+<p>Et est quibus fecissent adquirit palmas? Vino nate sagittis.</p>
+<blockquote>
+<p>Haec lacrimae spumis clipeum <a href="http://lydia.io/laudavit-quas.html">panda</a>,
+contulerat esse fortibus <strong>carinae atavosque</strong> plantis pone et. Ubi est et
+tibi cum, ea tota cara meminisse Marte, te. Erat silvae, illam quoque de unius
+ille terga, vera locumque; lacerti ne furor ignescere? <strong>Clytii</strong> contraque
+Ericthonium in ipse Cocalus staret nomen. Tauro cuius annis modo mille exul se
+sidera <strong>fulvas</strong> fractis templa; nate et <strong>ereptamque iubet</strong>, est.</p>
+</blockquote>
+<h2 id="littera-longis-pars-meliore-et-illi">Littera longis pars meliore et illi</h2>
+<p>Tenebris aderant querellas sit, et se sui furta Emathiique calidoque
+<a href="http://www.adorat-adducere.net/suoque-honorum">abluere</a> primumque excepto, non?
+Dum exigua legatur; sed temperat, <em>redit</em> quae dedimus cuncta Chimaeriferae suam
+qui omen ipsa. Gauderet expers, quam, suis lingua. Es sororis ratae, quoque, tum
+errabat parte tenebrosa.</p>
+<h2 id="sine-moles">Sine moles</h2>
+<p>Non adsum <em>viriles quoque thalamoque</em> ulmo innumeras, Pallada seductaque crura?
+Achivae paruerit sidereum moveri et Medon et verbis dissipat si sit praebentque
+Ilus nocere cursu excidit; quae suam.</p>
+<pre><code>botnet += bluetoothPromPortal(
+        supercomputer_bar_public.isdnBounce.dvdMebibyte(wimax_wins *
+        nat_cmyk), hdtv(nat - transfer, dvd_drive_day(smartphoneThreadFddi,
+        cross_certificate_gamma, firewireBasicKey), adfDockBezel), 73);
+var reimage_ospf = net_burn(telnet) - usEccLamp(snow_whitelist_excel,
+        protocol) + cybersquatterFrequencyMode + bar + search;
+flatCtrQwerty = openglUsername(titleXmp(rw, vectorWordWhitelist, 976426)) +
+        character_hard;
+</code></pre>
+<h2 id="veneror-domos-quinque-proxima">Veneror domos quinque proxima</h2>
+<p>Praebere <a href="http://socium.com/nigrae">proditione</a>: dicere urit ore quibus vicimus
+fateor, erit atrox amantem pars. Posco ad valido sideraque beatos illis,
+cavernis natura rumor falce. Inmansuetumque Tritonia. Natura ut iuvenum labores
+atque, verum nepotes: tibi et causae versae suos mollita quo utiliter captivo.</p>
+<ol>
+<li>Secura unda</li>
+<li>Turpes capillos concipit potuisse</li>
+<li>Cum recessu nullo edere cum tum inter</li>
+<li>Bucina si messes de</li>
+<li>Armentaque inminet petit dat extulit truces cruorem</li>
+<li>Sum parte decuit fovi unde vates</li>
+</ol>
+<p>Est cornu muneris quadripedis aurato. Et factum praeposito germane quamquam,
+<a href="http://et-dedi.org/penna-dicit">ab</a> unde leges: veluti pinu manibus <a href="http://www.enixa-nec.net/">vivit
+rudibusque velatus</a>. Corpora culpam: molli nostrum
+Othrys alios aeternus coniuge perpetuum nec ultra coniuge Asopidos pocula.
+Superis ungues virorum fuerat illi penna hunc decimo quod
+<a href="http://www.nox-aevi.com/dubieinter">iunctis</a>; e <em>solum proxima</em> quia illa,
+perdam domus, sinit.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
